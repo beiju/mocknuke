@@ -30,7 +30,7 @@ There are two syntaxes for specifying which tubes to modify, modeled after the *
 
 The "symbolic" syntax uses `+` and `-` to set a tube as available or unavailble using its number (from `0` to `3`). So `supply +0` marks the first supply tube as avilable, and `storage -3` marks the last storage tube as unavailable.
 
-The "absolute" syntax uses a 4-digit binary number to specify the state of all the tubes at once. The tubes are listed in order with the first tube in the leftmost position. This is _not_ a bitmask where the number in the `n`'s place controls the state of the `n`th tube. For example, `supply 0101` marks the first and third supply tubes as available and the other two unavailable.
+The "absolute" syntax uses a 4-digit binary number to specify the state of all the tubes at once. The tubes are listed in order with the first tube in the leftmost position. This is _not_ a bitmask where the number in the `n`th place controls the state of the `n`th tube. For example, `supply 0101` marks the first and third supply tubes as available and the other two unavailable.
 
 Future
 ------
